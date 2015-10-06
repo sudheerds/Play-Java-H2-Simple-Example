@@ -2,3 +2,10 @@ This is your new Play application
 =================================
 
 This file will be packaged with your application, when using `activator dist`.
+
+This is a simple Play-java application that demostrates the use of the default database H2 that comes with play,
+its easy and very easy to use. But remmeber to replace it with production database such as mysql or oracle, in the
+development mode H2 is fine but for production its not recoomended. But H2 is a good beginning to start learning ORM
+and evolutions. 
+
+Hope you find this useful

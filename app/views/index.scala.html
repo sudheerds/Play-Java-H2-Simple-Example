@@ -1,0 +1,16 @@
+@(message: String)(itemform:Form[Item])
+@import helper._
+
+@main(message) {
+@helper.form(action=routes.Application.save()){
+<fieldset>
+    @helper.inputText(itemform("id"),'_label -> "Id")
+    @helper.inputText(itemform("name"),'_label -> "Name")
+    @helper.inputText(itemform("quantity"),'_label -> "Quantity")
+</fieldset>
+<input class="btn btn-primary" type="submit" value="Add">
+<a class="btn" href="@routes.Application.index()">Reset</a>
+}
+}
+
+
